@@ -1,0 +1,6 @@
+{
+  "name": "NIT Nagaland ECE Laboratory",
+  "description": "An interactive laboratory portal for the Department of Electronics and Communication Engineering at NIT Nagaland, featuring virtual lab simulators, equipment catalog, and session bookings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

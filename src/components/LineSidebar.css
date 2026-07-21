@@ -1,0 +1,87 @@
+.line-sidebar {
+  display: inline-flex;
+  font-size: var(--font-size, 1.1rem);
+  color: var(--text-color, #c4c4c4);
+  user-select: none;
+  --accent-color: #A855F7;
+  --text-color: #c4c4c4;
+  --marker-color: #6c6c6c;
+  --marker-length: 60px;
+  --marker-gap: 0px;
+  --tick-scale: 0.5;
+  --max-shift: 30px;
+  --item-gap: 20px;
+  --font-size: 1.1rem;
+  --smoothing: 100ms;
+}
+
+.line-sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--item-gap);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border-left: 2px solid var(--marker-color);
+  padding-left: 0;
+}
+
+.line-sidebar__item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 8px 16px 8px calc(var(--marker-length) + var(--marker-gap) + 12px);
+  color: var(--text-color);
+  transform: translateX(calc(var(--effect, 0) * var(--max-shift)));
+  transition: transform 0.1s ease-out, color 0.15s ease-out;
+}
+
+/* Interpolate text color and marker color based on variable --effect */
+.line-sidebar__item {
+  color: color-mix(in srgb, var(--accent-color) calc(var(--effect, 0) * 100%), var(--text-color));
+}
+
+.line-sidebar__item[aria-current="true"] {
+  font-weight: 750;
+  color: var(--accent-color);
+}
+
+.line-sidebar__marker {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: calc(var(--marker-length) + (var(--effect, 0) * var(--max-shift) * 0.5));
+  background-color: color-mix(in srgb, var(--accent-color) calc(var(--effect, 0) * 100%), var(--marker-color));
+  transition: width 0.1s ease-out, background-color 0.15s ease-out;
+}
+
+.line-sidebar--scale-tick .line-sidebar__marker {
+  transform: translateY(-50%) scaleY(calc(1 + (var(--effect, 0) * var(--tick-scale))));
+}
+
+.line-sidebar__label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 1.2;
+}
+
+.line-sidebar__index {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.75em;
+  opacity: 0.6;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--accent-color) calc(var(--effect, 0) * 100%), var(--text-color));
+}
+
+.line-sidebar__text {
+  font-weight: 500;
+}
+
+.line-sidebar__item:hover {
+  text-shadow: 0 0 8px color-mix(in srgb, var(--accent-color) 20%, transparent);
+}

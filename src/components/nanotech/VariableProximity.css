@@ -1,0 +1,6 @@
+.variable-proximity {
+  cursor: default;
+}
+.variable-proximity span {
+  transition: font-variation-settings 0.1s ease;
+}
