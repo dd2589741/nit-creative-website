@@ -7,6 +7,7 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
+<<<<<<< HEAD
 /* Custom keyframes for swiping from middle-right (e.g. 50% / 70% width) to left */
 @keyframes marquee-swipe {
   0% {
@@ -27,12 +28,15 @@
   animation-play-state: paused;
 }
 
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
 /* Custom modern scrollbar styles for technical listings */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
+<<<<<<< HEAD
 @keyframes shimmer {
   0% {
     transform: translateX(-100%) skewX(-15deg);
@@ -45,6 +49,8 @@
   }
 }
 
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
 .custom-scrollbar::-webkit-scrollbar-track {
   background: #0f172a;
 }
@@ -57,3 +63,7 @@
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #475569;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b

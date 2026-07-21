@@ -173,6 +173,7 @@ export default function NanotechLayout({ onBackToIntro }: NanotechLayoutProps) {
         className="absolute inset-0 w-full h-full pointer-events-none z-0 opacity-80" 
       />
 
+<<<<<<< HEAD
       {/* Top Latest Update Banner - Swiping from Middle Right to Left */}
       <div 
         onClick={() => window.dispatchEvent(new CustomEvent('open-latest-updates'))}
@@ -194,6 +195,8 @@ export default function NanotechLayout({ onBackToIntro }: NanotechLayoutProps) {
         </div>
       </div>
 
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
       {/* FIXED NAVBAR */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/85 shadow-sm shadow-slate-100/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -173,7 +173,11 @@ export default function LabDetails() {
         <h2 className="font-display font-bold text-3xl md:text-4xl text-slate-900 tracking-tight">
           ECE Core Laboratory Stations
         </h2>
+<<<<<<< HEAD
         <p className="text-slate-500 text-sm leading-relaxed max-w-2xl mx-auto text-left md:text-justify">
+=======
+        <p className="text-slate-500 text-sm leading-relaxed max-w-2xl mx-auto">
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
           The Department of Electronics & Communication Engineering at NIT Nagaland features state-of-the-art laboratory benches equipped with high-performance storage oscilloscopes, hardware training consoles, and professional EDA simulation systems.
         </p>
       </div>
@@ -188,7 +192,11 @@ export default function LabDetails() {
           <h3 className="font-display font-bold text-xl text-white tracking-tight">
             Laboratory Instrument & Hardware Trail
           </h3>
+<<<<<<< HEAD
           <p className="text-slate-400 text-xs mt-1.5 leading-relaxed text-left md:text-justify">
+=======
+          <p className="text-slate-400 text-xs mt-1.5 leading-relaxed">
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
             Move your mouse or drag your touch across the dark stage below to trace high-resolution captures of core ECE instruments, nanolithography machinery, and diagnostic waveforms.
           </p>
 

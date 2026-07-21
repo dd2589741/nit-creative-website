@@ -309,7 +309,11 @@ export default function NanotechResearch() {
             />
           </div>
 
+<<<<<<< HEAD
           <p className="text-xs sm:text-sm text-slate-600 font-mono tracking-wider max-w-3xl pt-2 text-left md:text-justify">
+=======
+          <p className="text-xs sm:text-sm text-slate-600 font-mono tracking-wider max-w-3xl pt-2">
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
             The laboratory operates on rigorous external research grants backed by federal science boards including the Science and Engineering Research Board (SERB), the Department of Science and Technology (DST), the newly formed Anusandhan National Research Foundation (ANRF), and the National Mission on Himalayan Studies (NMHS).
           </p>
 

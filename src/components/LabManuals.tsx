@@ -212,7 +212,11 @@ export default function LabManuals({ onLaunchSimulation }: LabManualsProps) {
         <h2 className="font-display font-bold text-3xl md:text-4xl text-slate-900 tracking-tight">
           ECE Laboratory Instruction Manuals
         </h2>
+<<<<<<< HEAD
         <p className="text-slate-500 text-sm leading-relaxed max-w-2xl mx-auto text-left md:text-justify">
+=======
+        <p className="text-slate-500 text-sm leading-relaxed max-w-2xl mx-auto">
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
           Access complete curriculum guide files, apparatus checklists, theoretical proofs, and interactive step-by-step experiment instructions approved by NIT Nagaland syllabus panels.
         </p>
       </div>

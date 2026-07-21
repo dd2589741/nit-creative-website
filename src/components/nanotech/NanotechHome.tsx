@@ -102,7 +102,11 @@ export default function NanotechHome({ onNavigate }: NanotechHomeProps) {
           <h2 className="text-xl sm:text-2xl font-display font-extrabold uppercase tracking-widest text-slate-900 border-l-4 border-blue-600 pl-4">
             Our Department & Laboratory
           </h2>
+<<<<<<< HEAD
           <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-sans font-normal text-left md:text-justify">
+=======
+          <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-sans font-normal">
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
             Well-equipped laboratories provide hands-on experience in core areas such as Basic Electronics, Digital Electronics, Analog Electronics, Communication Systems, VLSI, Embedded Systems, and Microprocessors & Microcontrollers. Equipped with modern instruments, the labs support practical learning, innovation, project development, and research while enhancing students' technical and problem-solving skills.
           </p>
           <div className="pt-2 flex flex-wrap gap-4">
@@ -162,7 +166,11 @@ export default function NanotechHome({ onNavigate }: NanotechHomeProps) {
             <h3 className="text-lg sm:text-xl font-display font-extrabold uppercase tracking-widest text-slate-900">
               Greetings from the Laboratory
             </h3>
+<<<<<<< HEAD
             <p className="text-xs sm:text-sm text-slate-600 italic leading-relaxed font-sans font-medium text-left md:text-justify">
+=======
+            <p className="text-xs sm:text-sm text-slate-600 italic leading-relaxed font-sans font-medium">
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
               &quot;Welcome to the Department of Electronics and Communication Engineering at NIT Nagaland. Our work is centered on understanding electronic interfaces at the absolute scale limit. Every breakthrough in tomorrow's semiconductor nodes or ultra-selective chemical detectors begins with the precise configuration of atoms in our synthesizers. Our students and researchers collaborate inside an ecosystem designed to challenge conventional scientific limits, driving impactful patents and sessional innovations.&quot;
             </p>
             <div className="pt-2">
@@ -226,7 +234,11 @@ export default function NanotechHome({ onNavigate }: NanotechHomeProps) {
               <Mail className="h-5 w-5 text-blue-600" />
               <span>Contact Coordinates</span>
             </h3>
+<<<<<<< HEAD
             <p className="text-xs text-slate-600 leading-relaxed text-left md:text-justify">
+=======
+            <p className="text-xs text-slate-600 leading-relaxed">
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
               Have inquiries about collaborative research opportunities, doctoral fellowships, or instrument testing slots? Get in touch with our team directly.
             </p>
           </div>

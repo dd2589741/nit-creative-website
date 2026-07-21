@@ -19,7 +19,10 @@ import {
 } from 'lucide-react';
 import { Publication } from './nanotechTypes';
 import SplitText from './SplitText';
+<<<<<<< HEAD
 import LineSidebar from '../LineSidebar';
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
 
 export default function NanotechPublications() {
   const [selectedYear, setSelectedYear] = useState<number | 'All'>('All');
@@ -343,6 +346,7 @@ export default function NanotechPublications() {
   const domains = ['All', 'Photodetectors', 'Nanowires & Nanostructures', 'Thin Films & Oxides', 'Photocatalysis & Chemistry', 'Electronics & Memory', 'Energy & Solar'];
   const years = ['All', 2026, 2025, 2024, 2023, 2022, 2021];
 
+<<<<<<< HEAD
   const sidebarItems = useMemo(() => {
     return years.map(y => {
       const count = y === 'All' 
@@ -357,6 +361,8 @@ export default function NanotechPublications() {
     return idx !== -1 ? idx : 0;
   }, [years, selectedYear]);
 
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
   const publicationTypes = [
     { id: 'All', label: 'All Types' },
     { id: 'Journal Article', label: 'Journal Articles' },
@@ -581,6 +587,7 @@ export default function NanotechPublications() {
                 <span>Filter By Year</span>
               </h4>
               
+<<<<<<< HEAD
               <div className="py-2 overflow-x-auto lg:overflow-visible scrollbar-none">
                 <LineSidebar
                   items={sidebarItems}
@@ -602,6 +609,33 @@ export default function NanotechPublications() {
                   }}
                   className="w-full"
                 />
+=======
+              <div className="flex flex-row lg:flex-col overflow-x-auto lg:overflow-visible gap-1 p-1 bg-slate-50 lg:bg-transparent rounded-xl lg:rounded-none border border-slate-100 lg:border-0 scrollbar-none">
+                {years.map(y => {
+                  const count = y === 'All' 
+                    ? publications.length 
+                    : publications.filter(p => p.year === y).length;
+                  const isSelected = selectedYear === y;
+                  return (
+                    <button
+                      key={y}
+                      onClick={() => setSelectedYear(y as any)}
+                      className={`flex items-center justify-between px-3 py-2 text-xs font-mono font-bold uppercase rounded-xl transition-all duration-200 cursor-pointer text-left shrink-0 whitespace-nowrap ${
+                        isSelected 
+                          ? 'bg-blue-600 text-white shadow-md shadow-blue-500/15' 
+                          : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                      }`}
+                    >
+                      <span>{y === 'All' ? 'All Years' : `Year ${y}`}</span>
+                      <span className={`ml-2 text-[9px] px-1.5 py-0.5 rounded-full ${
+                        isSelected ? 'bg-blue-700 text-white' : 'bg-slate-200 text-slate-600'
+                      }`}>
+                        {count}
+                      </span>
+                    </button>
+                  );
+                })}
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
               </div>
             </div>
 

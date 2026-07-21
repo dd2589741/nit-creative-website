@@ -7,7 +7,11 @@ import LogicGateSimulator from './components/LogicGateSimulator';
 import LabBookingSystem from './components/LabBookingSystem';
 import NanotechLayout from './components/nanotech/NanotechLayout';
 import BlurText from './components/nanotech/BlurText';
+<<<<<<< HEAD
 import { ArrowDown, Mail, Phone, MapPin, Globe, Award, ShieldAlert, GraduationCap, Github, Send, Sparkles, Activity, Clock, Cpu, CheckCircle2, Sliders, Zap, RefreshCw, Layers, Atom, X, Calendar, ChevronRight } from 'lucide-react';
+=======
+import { ArrowDown, Mail, Phone, MapPin, Globe, Award, ShieldAlert, GraduationCap, Github, Send, Sparkles, Activity, Clock, Cpu, CheckCircle2, Sliders, Zap, RefreshCw, Layers, Atom } from 'lucide-react';
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
 
 type TabType = 'directory' | 'manuals' | 'oscilloscope' | 'logic-gates' | 'booking';
 
@@ -27,8 +31,11 @@ export default function App() {
   const [isExplored, setIsExplored] = useState(false);
   const [portalMode, setPortalMode] = useState<'nanotech' | 'ece'>('nanotech');
   const [showPortalSelector, setShowPortalSelector] = useState(false);
+<<<<<<< HEAD
   const [showLatestUpdates, setShowLatestUpdates] = useState(false);
   const [selectedUpdateId, setSelectedUpdateId] = useState('admissions-2026');
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
 
   // Query Form State
   const [queryName, setQueryName] = useState('');
@@ -44,6 +51,7 @@ export default function App() {
   const navRef = useRef<HTMLDivElement | null>(null);
   const heroCanvasRef = useRef<HTMLCanvasElement | null>(null);
 
+<<<<<<< HEAD
   // Subscription to open latest updates modal from any layout banner
   useEffect(() => {
     const handleOpenUpdates = () => {
@@ -55,6 +63,8 @@ export default function App() {
     };
   }, []);
 
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
   useEffect(() => {
     // Clock tick
     const updateTime = () => {
@@ -488,6 +498,7 @@ export default function App() {
     setTimeout(() => setToastMessage(null), 5000);
   };
 
+<<<<<<< HEAD
   const latestUpdates = [
     {
       id: 'admissions-2026',
@@ -559,6 +570,8 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans antialiased overflow-x-hidden">
       <AnimatePresence mode="wait">
@@ -568,6 +581,7 @@ export default function App() {
             initial={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.15, filter: 'blur(8px)' }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+<<<<<<< HEAD
             className="relative min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-slate-50 via-white to-emerald-50/20 text-slate-900 px-6 pt-24 pb-16 overflow-hidden select-none"
           >
             {/* Top Latest Update Banner - Swiping from Middle Right to Left */}
@@ -591,6 +605,10 @@ export default function App() {
               </div>
             </div>
 
+=======
+            className="relative min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-slate-50 via-white to-emerald-50/20 text-slate-900 px-6 py-16 overflow-hidden select-none"
+          >
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
             {/* Elegant light pattern overlay */}
             <div className="absolute inset-0 opacity-40 pointer-events-none">
               <div className="absolute inset-0 bg-radial-gradient from-emerald-500/5 via-transparent to-transparent" />
@@ -646,7 +664,11 @@ export default function App() {
               {/* Department Main Branding */}
               <div className="space-y-3 flex flex-col items-center w-full">
                 <BlurText
+<<<<<<< HEAD
                   text="ECE Excellence Hub"
+=======
+                  text="ECE Lab Portal"
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
                   delay={120}
                   animateBy="words"
                   direction="top"
@@ -668,7 +690,11 @@ export default function App() {
                 delay={60}
                 animateBy="words"
                 direction="bottom"
+<<<<<<< HEAD
                 className="text-slate-600 text-xs sm:text-sm sm:text-base leading-relaxed max-w-xl mx-auto font-sans text-left md:text-justify font-medium justify-center w-full"
+=======
+                className="text-slate-600 text-xs sm:text-sm sm:text-base leading-relaxed max-w-xl mx-auto font-sans text-center font-medium justify-center w-full"
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
               />
 
 
@@ -717,6 +743,7 @@ export default function App() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col min-h-screen bg-slate-50"
           >
+<<<<<<< HEAD
             {/* Top Latest Update Banner - Swiping from Middle Right to Left */}
             <div 
               onClick={() => window.dispatchEvent(new CustomEvent('open-latest-updates'))}
@@ -738,6 +765,8 @@ export default function App() {
               </div>
             </div>
 
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
             {/* 2. Sticky Logo Navigation Panel */}
             <div ref={navRef} className="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-md">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -824,7 +853,11 @@ export default function App() {
                     <Activity className="h-5 w-5 text-emerald-600 shrink-0" />
                     <span>Submit Sessional Query</span>
                   </h3>
+<<<<<<< HEAD
                   <p className="text-xs text-slate-500 font-sans leading-relaxed text-left md:text-justify">
+=======
+                  <p className="text-xs text-slate-500 font-sans leading-relaxed">
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
                     Stuck on an RC circuit filter phase curve or assembly instruction setup? Log your question directly with our ECE laboratory supervisors.
                   </p>
                 </div>
@@ -975,6 +1008,7 @@ export default function App() {
           </motion.div>
         )}
       </AnimatePresence>
+<<<<<<< HEAD
 
       {/* Interactive Latest Updates Modal Overlay */}
       <AnimatePresence>
@@ -1131,6 +1165,8 @@ export default function App() {
           </div>
         )}
       </AnimatePresence>
+=======
+>>>>>>> 7fb43f624509646fca7ed2a26e4b2d0bdc40884b
     </div>
   );
 }
